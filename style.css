@@ -212,3 +212,102 @@ nav ul.listItems a li:hover{
     line-height: 1.7rem;
     margin-top: 20px;
 }
+
+/* Services ofered ends here */
+
+/* Our Clients Starts here */
+
+
+.ourServices
+{
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.client
+{
+    height: 175px;
+    width: 250px;
+    /* background-color: red; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: 0.2s all ease-in-out;
+}
+.client:hover
+{
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+/* Our clients ends here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+@media screen  and (max-width: 1330px) {
+    .heading h1
+    {
+        font-size: 2.5rem;
+    }
+    .rightHome
+    {
+        width: 55%;
+    }
+    .leftHome
+    {
+        width: 40%;
+    }
+}
+
+
+@media screen and (max-width: 1000px)
+{
+    body
+    {
+        background-color: red;
+    }
+}
