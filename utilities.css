@@ -30,22 +30,52 @@
     cursor: pointer;
 }
 
-#next
-{
-    position: relative;
-    top: 10px;
-    /* letter-spacing: ; */
-    left: 10px;
-    width: 20px;
-}
-
-.animate
-{
-    animation: imagePreview 2s ease-in-out 0 1;
-}
 @keyframes imagePreview {
     0%
     {
 
     }
+}
+
+.cardContainer
+{
+    display: flex;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    grid-gap: 2rem
+}
+
+.card
+{
+    height: 350px;
+    width: 280px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+    padding: 12px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.card .data .name
+{
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-align: center;
+    color: var(--primaryColor);
+}
+.card .data .desc
+{
+    font-size: 0.9rem;
+    text-align: justify;
+    padding: 5px;
+}
+
+.card .image img{
+    width: 150px;
+    border-radius: 50%;
 }
