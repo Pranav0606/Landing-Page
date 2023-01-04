@@ -17,8 +17,6 @@ function previewImg(a)
     imageContainer.setAttribute('src', img.src);
     mainImageContainer[0].style.opacity = '1';
     mainImageContainer[0].style.top = 50 + '%';
-    // mainImageContainer[0].style.transform = 'scale(' + 1 + '), translate('-50 + '% ,' + 50 +  '%)';
-
     console.log(a);
 }
 
