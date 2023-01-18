@@ -31,6 +31,7 @@ nav {
   background-color: white;
   top: 0;
   left: 0;
+  z-index: 9;
 }
 nav ul:first-child {
   display: flex;
@@ -503,7 +504,6 @@ footer a {
     box-shadow: none;
     top: 0;
     left: 0;
-    z-index: 9;
   }
   nav ul:first-child {
     width: 100%;
