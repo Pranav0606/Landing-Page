@@ -40,3 +40,13 @@
   margin: 3px;
   border-radius: 5px;
 }
+
+.mainDescription {
+  width: 90%;
+  color: gray;
+  text-align: justify;
+  margin: auto;
+  margin-top: 15px;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+}
