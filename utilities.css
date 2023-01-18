@@ -27,18 +27,16 @@
   cursor: pointer;
 }
 
-#hamburger
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+#hamburger {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-#hamburger div{
-    height: 5px;
-    width: 30px;
-    background-color: black;
-    margin: 3px;
-    border-radius: 5px;
-    /* display: none; */
+#hamburger div {
+  height: 5px;
+  width: 30px;
+  background-color: black;
+  margin: 3px;
+  border-radius: 5px;
 }

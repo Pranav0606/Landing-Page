@@ -26,12 +26,11 @@ document.getElementById('delete').addEventListener('click', () => {
 });
 
 
-list.style.left = (parseInt(window.outerWidth) + 100) + 'px';
+// list.style.left = (parseInt(window.outerWidth) + 100) + 'px';
 document.getElementById("hamburger").addEventListener("click", () => {
-    if (list.style.left !== '0px')
-        list.style.left = 0 + 'px';
+    list.classList.toggle('isVisible');
+    if (list.getAttribute('id') === 'isVisible')
+        list.setAttribute("id", "");
     else
-        list.style.left = (parseInt(window.outerWidth) + 100) + 'px';
-
-
+        list.setAttribute('id', 'isVisible');
 });

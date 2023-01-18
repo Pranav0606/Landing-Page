@@ -1,5 +1,6 @@
 :root {
   --primaryColor: #0099ff;
+  --fullHeight: 100w;
 }
 
 * {
@@ -12,9 +13,11 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
+  overflow-x: hidden;
+}
+.mainContainer {
   max-width: 1920px;
   margin: auto;
-  overflow-x: hidden;
 }
 nav {
   display: flex;
@@ -68,6 +71,8 @@ nav ul.listItems li:hover a {
   height: 100px;
   width: 100%;
   margin: auto;
+
+  /* max-width: 1920px; */
 }
 .downImage img {
   position: absolute;
@@ -406,14 +411,23 @@ footer a {
 }
 
 @media screen and (max-width: 900px) {
-  /* nav-down: ; */
-  /* nav-down: ; */
+  body {
+    overflow-x: hidden;
+  }
+  .mainContainer {
+    margin-top: 8 0px;
+  }
   nav {
     flex-direction: column;
     max-height: 100px;
     height: 80px;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    background-color: white;
+    box-shadow: none;
+    top: 0;
+    left: 0;
   }
   nav ul:first-child {
     width: 100%;
@@ -421,15 +435,20 @@ footer a {
     align-items: center;
     transform: translate(0);
   }
+
+  #isVisible {
+    height: 240px;
+    padding: 12px 0;
+  }
+
   nav ul.listItems {
-    position: absolute;
-    left: -1000px;
+    position: fixed;
+    height: 0;
     flex-direction: column;
     justify-content: center;
     background-color: white;
     width: 100%;
-    box-shadow: 0 5px 50px 5px rgba(0, 0, 0, 0.1);
-    padding: 12px 0;
+    overflow: hidden;
     transition: 0.5s all ease-in-out;
     top: 80px;
   }
@@ -466,9 +485,13 @@ footer a {
   .rightHome svg {
     width: 30%;
   }
+
+  #hamburger {
+    display: flex;
+  }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   .downImage {
     display: none;
   }
@@ -480,6 +503,16 @@ footer a {
     width: 50%;
   }
 
+  .imagePreviewerContainer {
+    height: 100vh;
+    width: 100vw;
+  }
+  .imagePreviewerContainer img {
+    width: 80%;
+  }
+  #home {
+    height: auto;
+  }
   #home,
   #ourServices,
   #ourClients {
