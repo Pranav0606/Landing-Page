@@ -338,6 +338,7 @@ footer a {
   overflow: hidden;
   position: relative;
   z-index: 2;
+  transition: 0.4s all ease-in-out;
 }
 
 .card .personImage {
@@ -440,6 +441,37 @@ footer a {
   fill: #0099ff;
   width: 20px;
 }
+
+/* FAQ' s section */
+
+.FAQheight {
+  height: auto;
+}
+
+.FAQitem {
+  background-color: aliceblue;
+  padding: 12px;
+  margin-top: 25px;
+  /* height: 60px; */
+  overflow: hidden;
+  transition: 0.5s all linear;
+}
+
+.FAQitem .question {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 23px;
+  align-items: center;
+}
+.FAQitem .answer {
+  display: flex;
+  text-align: justify;
+  padding: 0 23px;
+  overflow: hidden;
+  height: 0;
+  transition: 0.3s all ease-in-out;
+}
+
 /* Media Queries */
 @media screen and (max-width: 1330px) {
   .heading h1 {
@@ -564,6 +596,7 @@ footer a {
 
   #hamburger {
     display: flex;
+    cursor: pointer;
   }
 }
 
